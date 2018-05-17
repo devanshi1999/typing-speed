@@ -9,7 +9,7 @@ var button = document.getElementById("startTimer");
 
 var type_text=document.getElementById("demo").innerHTML   //string "hi my name is devanshi"
 
-
+text.style.visibility = "hidden";
 
 
 //no. of correct characters inout
@@ -82,6 +82,7 @@ text.addEventListener('keydown', function(e) {
 
 button.addEventListener('click', function(e) {
     e.preventDefault();
+    text.style.visibility = "visible";
     start();
 });
 
